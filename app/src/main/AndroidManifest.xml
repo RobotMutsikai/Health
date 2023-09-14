@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Health"
+        tools:targetApi="31">
+        <activity
+            android:name=".ReminderBroadcast"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HealthArticlesDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HealthArticlesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BuyMedicineBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CartBuyMedicineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BuyMedicineDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BuyMedicineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrderDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LabTestBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CartLabActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LabTestDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LabTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BookAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FindDoctorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="ReminderBroadcast" />
+
+        <meta-data
+             android:name="android.app.lib_name"
+             android:value="" />
+    </application>
+</manifest>
